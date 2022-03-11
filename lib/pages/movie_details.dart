@@ -72,9 +72,7 @@ class _MovieDetailsState extends State<MovieDetailsPage> {
                   ..addCustomMetadata('Movie Name', details!['title'])
                   ..addCustomMetadata('custom_number', 12345)
                   ..addCustomMetadata('custom_bool', true)
-                  ..addCustomMetadata('key', 1)
-                  ..addCustomMetadata('custom_list_number', [1, 2, 3, 4, 5])
-                  ..addCustomMetadata('custom_list_string', ['a', 'b', 'c']),
+                  ..addCustomMetadata('key', 1),
                 keywords: ['Plugin', 'Branch', 'Flutter'],
                 publiclyIndex: true,
                 locallyIndex: true,

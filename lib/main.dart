@@ -59,7 +59,7 @@ class MyApp extends StatelessWidget {
       ),
       home: const HomePage(),
       routes: {
-        MovieDetailsPage.routeName: (context) => MovieDetailsPage(),
+        MovieDetailsPage.routeName: (context) => const MovieDetailsPage(),
       },
     );
   }
