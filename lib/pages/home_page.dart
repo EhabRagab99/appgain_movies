@@ -112,11 +112,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       floatingActionButton: ElevatedButton(
         onPressed: () {
-          setState(() {});
           flutterLocalNotificationsPlugin.show(
               0,
-              "Testing ",
-              "How you doin ?",
+              "Appgain Movies",
+              "Hello Mr. Mohamed, this is a testing local notification",
               NotificationDetails(
                   android: AndroidNotificationDetails(channel.id, channel.name,
                       channelDescription: channel.description,
@@ -125,7 +124,7 @@ class _HomePageState extends State<HomePage> {
                       playSound: true,
                       icon: '@mipmap/ic_launcher')));
         },
-        child: Text('show notification'),
+        child: const Text('Show Local Notification'),
       ),
       backgroundColor: Colors.grey,
       appBar: AppBar(
