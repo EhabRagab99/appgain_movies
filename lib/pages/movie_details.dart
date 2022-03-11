@@ -13,67 +13,6 @@ class MovieDetailsPage extends StatefulWidget {
 }
 
 class _MovieDetailsState extends State<MovieDetailsPage> {
-  // List<MovieDetails> movieDetailsList = [];
-  // List<BelongsToCollection> belongsToCollectionList = [];
-  // List<Genres> genresList = [];
-  // List<ProductionCompanies> productionCompaniesList = [];
-  // List<ProductionCountries> productionCountriesList = [];
-  // List<SpokenLanguages> spokenLanguagesList = [];
-  //
-  // final url = Uri.parse(
-  //     'https://api.themoviedb.org/3/movie/634649?api_key=2932fa98d58fe6796b5b5bc47db7e670&language=en-US');
-
-  // getData(int id) async {
-  //   http.Response response = await http.get(Uri.parse(
-  //       'https://api.themoviedb.org/3/movie/$id?api_key=2932fa98d58fe6796b5b5bc47db7e670&language=en-US'));
-  //   var jsonData = jsonDecode(response.body.toString());
-  //   jsonData.forEach((details) {
-  //     MovieDetails movieDetails = MovieDetails.fromJson(details);
-  //     print(movieDetails.title);
-  //   }).toList();
-  //   // print(jsonData);
-  //   // jsonData['belongs_to_collection'].forEach((collection) {
-  //   //   BelongsToCollection belongsToCollection =
-  //   //       BelongsToCollection.fromJson(collection);
-  //   //   belongsToCollectionList.add(collection);
-  //   // });
-  //   // jsonData['genres'].forEach((collection) {
-  //   //   Genres geners = Genres.fromJson(collection);
-  //   //   genresList.add(collection);
-  //   //   print(genresList);
-  //   // });
-  //   // jsonData['production_companies'].forEach((collection) {
-  //   //   ProductionCompanies productionCompanies =
-  //   //       ProductionCompanies.fromJson(collection);
-  //   //   productionCompaniesList.add(collection);
-  //   // });
-  //   //
-  //   // jsonData['production_countries'].forEach((collection) {
-  //   //   ProductionCountries productionCountries =
-  //   //       ProductionCountries.fromJson(collection);
-  //   //   productionCountriesList.add(collection);
-  //   // });
-  //   // jsonData['spoken_languages'].forEach((collection) {
-  //   //   SpokenLanguages spokenLanguages = SpokenLanguages.fromJson(collection);
-  //   //   spokenLanguagesList.add(collection);
-  //   // });
-  //   // print(spokenLanguagesList);
-  //
-  //   // print(jsonData);
-  //
-  //   // print(jsonData['belongs_to_collection']);
-  //   // print(jsonData['genres']);
-  //   // print(jsonData['production_companies']);
-  //
-  //   // jsonData.forEach((movie) {
-  //   //   MovieDetails movieDetails = MovieDetails.fromJson(movie);
-  //   //   movieDetailsList.add(movieDetails);
-  //   //   print(movieDetailsList);
-  //   //   // print(movieDetails.overview.toString());
-  //   //   // print(popularMovies.title);
-  //   //   // print(popularMovies.popularity);
-  //   // });
-  // }
   StreamController<String> controllerUrl = StreamController<String>();
 
   void generateLink(BranchUniversalObject buo, BranchLinkProperties lp) async {
