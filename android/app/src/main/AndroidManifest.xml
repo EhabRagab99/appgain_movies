@@ -8,9 +8,10 @@
         android:icon="@mipmap/ic_launcher">
         android:allowBackup="true"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+       android:theme="@style/Theme.MyApplication.NoActionBar">
         <activity
             android:name=".MainActivity"
+            android:exported="true"
             android:launchMode="singleTask"
             android:theme="@style/LaunchTheme"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
