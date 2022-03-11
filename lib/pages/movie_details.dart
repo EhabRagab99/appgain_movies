@@ -178,6 +178,15 @@ class _MovieDetailsState extends State<MovieDetailsPage> {
               const SizedBox(
                 height: 2,
               ),
+              const Text(
+                'Overview:',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w300,
+                ),
+              ),
+              const SizedBox(),
               Text(
                 details['overview'],
                 style: const TextStyle(
