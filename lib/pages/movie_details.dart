@@ -82,7 +82,10 @@ class _MovieDetailsState extends State<MovieDetailsPage> {
             lp,
           );
         },
-        child: const Text('Generate Link'),
+        child: const Text(
+          'Generate Link\n\nI\'m using it for\ngenerating deep links\n',
+          textAlign: TextAlign.center,
+        ),
       ),
       body: SafeArea(
         child: Container(
